@@ -67,6 +67,10 @@ ex -> 원하는 방법으로 사용하시면 됩니다
 
 6. 이미지
 
-   - Github 내에 이미지를 업로드 후에 링크를 복사후 조금 기다리거나 외부에서 링크를 가져온 다음에 조금 기다린다(변환 시간이 좀 있음)
- 
+   - Github 내에 이미지를 업로드 후에 링크를 복사후 조금 기다리거나 외부에서 링크를 가져온다(변환 시간이 좀 있음)
   
+   - 위의 하이퍼링크 입력 방식으로 작성하면 된다
+  
+   <https://github.com/Ppajingae/00_Github_Info/blob/main/src/main/resources/img/ppajingae.png>
+   
+      
