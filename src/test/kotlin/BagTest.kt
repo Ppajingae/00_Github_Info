@@ -1,5 +1,6 @@
 import io.kotest.assertions.throwables.shouldThrow
 import io.kotest.core.spec.style.BehaviorSpec
+import io.kotest.matchers.collections.shouldNotContain
 import io.kotest.matchers.shouldBe
 import org.example.Bag
 import org.example.Item
@@ -66,5 +67,38 @@ class BagTest : BehaviorSpec({
             }
         }
     }
+
+    Given("가방에 아이템이 있을 경우 아이템 삭제") {
+        val bag = Bag(100)
+        val item = Item("test", 20)
+        bag.putItem(item)
+        When("removeItem 함수 실행"){
+            bag.removeItem(item)
+            Then("아이템 사이즈가 0인 점 확인") {
+                bag.itemList.size shouldBe 0
+            }
+        }
+    }
+
+    Given("가방에 아이템이 여러개 있을 경우 아이템 삭제") {
+        val bag = Bag(100)
+        val items = listOf(
+            Item("test1", 20),
+            Item("test2", 20),
+            Item("test3", 20),
+            Item("test4", 20),
+        )
+        items.forEach {
+            bag.putItem(it)
+        }
+        When("removeItem 함수 실행") {
+            var targetItem = items[2]
+            bag.removeItem(targetItem)
+            Then("아이템 사이즈가 0인 점 확인") {
+                bag.itemList shouldNotContain targetItem
+            }
+        }
+    }
+
 
 })

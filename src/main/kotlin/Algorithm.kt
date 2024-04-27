@@ -1,20 +1,26 @@
 package org.example
 
+
 class Algorithm {
 }
 
 fun main() {
-    println(solution(123456))
+    println(solution("qwer"))
+    println("-------------------------")
+
 }
 
 
-fun solution(n: Long): Long {
-    var answer: String = n.toString()
-    var stringLength = answer.length
-    var nArray = CharArray(stringLength)
-    for (i in 0 until stringLength){
-        nArray[i] = answer[i]
+fun solution(s: String): String {
+    var answer = ""
+    //가운데 글자를 가져 오는 방법
+    if(s.length % 2 != 0){
+        answer = s[s.length / 2].toString()
+    }else{
+        val int = s.length / 2
+        answer = s[int - 1].toString() + s[int].toString()
     }
+    //짝수 일 경우 아닐 경우
 
-    return nArray.sortedDescending().joinToString("").toLong()
+    return answer
 }
