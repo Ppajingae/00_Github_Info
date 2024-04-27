@@ -55,18 +55,18 @@ ex -> 원하는 방법으로 사용하시면 됩니다
 
   ---
 
-  5. 하이퍼링크
+5. 하이퍼링크
      
-  - <> 안에 주소를 넣거나 []안에 링크의 이름을 넣은 후에 () 안에 링크 주소를 넣으면 된다
+   - <> 안에 주소를 넣거나 []안에 링크의 이름을 넣은 후에 () 안에 링크 주소를 넣으면 된다
     
-  - <https://whererufromdevelop.tistory.com/>
+   - <https://whererufromdevelop.tistory.com/>
     
-  - [WhereRUFrom](https://whererufromdevelop.tistory.com/)
+   - [WhereRUFrom](https://whererufromdevelop.tistory.com/)
  
-  ---
+   ---
 
-  6. 이미지
+6. 이미지
 
-  - Github 내에 이미지를 업로드 후에 링크를 복사후 조금 기다리거나 외부에서 링크를 가져온 다음에 조금 기다린다(변환 시간이 좀 있음)
+   - Github 내에 이미지를 업로드 후에 링크를 복사후 조금 기다리거나 외부에서 링크를 가져온 다음에 조금 기다린다(변환 시간이 좀 있음)
  
   
