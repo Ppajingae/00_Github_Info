@@ -71,6 +71,6 @@ ex -> 원하는 방법으로 사용하시면 됩니다
   
    - 위의 하이퍼링크 입력 방식 중 []에 이름을 넣고 ()에 주소를 넣는 방식으로 작성하면 된다
   
-   [빠진개][(https://github.com/Ppajingae/00_Github_Info/blob/main/src/main/resources/img/ppajingae.png)
+   [빠진개](https://github.com/Ppajingae/00_Github_Info/blob/main/src/main/resources/img/ppajingae.png)
    
       
