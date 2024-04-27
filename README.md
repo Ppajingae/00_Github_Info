@@ -72,5 +72,12 @@ ex -> 원하는 방법으로 사용하시면 됩니다
    - 위의 하이퍼링크 입력 방식과 비슷하게 ![]에 이름을 넣고 ()에 주소를 넣는 방식으로 작성하면 된다
   
    ![빠진개](https://github.com/Ppajingae/00_Github_Info/blob/main/src/main/resources/img/ppajingae.png)
+
+
+---
+
+#### 추가적으로 README.md 파일을 예쁘게 꾸미는 방법
+
+[readme.md 파일 꾸미기](https://github.com/kyechan99/capsule-render?tab=readme-ov-file)
    
       
