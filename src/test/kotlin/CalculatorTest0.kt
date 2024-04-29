@@ -1,8 +1,7 @@
 import io.kotest.assertions.throwables.shouldThrow
 import io.kotest.core.spec.style.BehaviorSpec
-import io.kotest.matchers.should
 import io.kotest.matchers.shouldBe
-import org.example.*
+import org.example.homework.calculator.*
 
 class CalculatorTest0 : BehaviorSpec({
 

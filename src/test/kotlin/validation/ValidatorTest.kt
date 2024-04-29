@@ -2,7 +2,7 @@ package validation
 
 import io.kotest.core.spec.style.BehaviorSpec
 import io.kotest.matchers.shouldBe
-import org.example.validation.NumberValidator
+import org.example.homework.validation.NumberValidator
 
 class ValidatorTest : BehaviorSpec({
 

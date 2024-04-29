@@ -1,6 +1,6 @@
-package validation;
+package org.example.homework.validation;
 
-import org.example.validation.ValidationInterface
+import org.example.homework.validation.ValidationInterface
 
 class Validator {
     fun validation(validator: ValidationInterface, argument: List<String>, count:Boolean):Boolean{

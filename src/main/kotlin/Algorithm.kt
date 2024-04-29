@@ -5,22 +5,13 @@ class Algorithm {
 }
 
 fun main() {
-    println(solution("qwer"))
-    println("-------------------------")
+
+    println(solution(3,1000000000,4))
 
 }
 
 
-fun solution(s: String): String {
-    var answer = ""
-    //가운데 글자를 가져 오는 방법
-    if(s.length % 2 != 0){
-        answer = s[s.length / 2].toString()
-    }else{
-        val int = s.length / 2
-        answer = s[int - 1].toString() + s[int].toString()
-    }
-    //짝수 일 경우 아닐 경우
-
-    return answer
+fun solution(price: Int, money: Int, count: Int): Long {
+    val result = money.toLong() - 1.rangeTo(count).map{it * price.toLong()}.sum()
+    if (result > 0) return 0L else return (result * (-1))
 }

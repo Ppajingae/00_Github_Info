@@ -1,4 +1,4 @@
-package org.example
+package org.example.homework
 
 
 fun main() {
@@ -14,8 +14,8 @@ fun main() {
         if(!isFirstCalculationCheck){
             tempNumber += calculationFunction(
                 isFirst = isFirstCalculationCheck,
-                num1= startCalculator[0].toInt(),
-                num2= startCalculator[2].toInt(),
+                firstNumber = startCalculator[0].toInt(),
+                secondNumber = startCalculator[2].toInt(),
                 operator = startCalculator[1],
                 tempNumber = tempNumber
             )
@@ -32,8 +32,8 @@ fun main() {
 
             tempNumber = calculationFunction(
                 isFirst = isFirstCalculationCheck,
-                num1= tempNumber,
-                num2= nextCalculation[0].toInt(),
+                firstNumber = tempNumber,
+                secondNumber = nextCalculation[0].toInt(),
                 operator = nextCalculation[1],
                 tempNumber = tempNumber
             )

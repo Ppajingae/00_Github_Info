@@ -1,6 +1,6 @@
-package org.example.validation
+package org.example.homework.validation
 
-class OperatorValidator:ValidationInterface {
+class OperatorValidator: ValidationInterface {
     override fun validate(inputArgument: List<String>, count: Boolean): Boolean {
         if (!count) {
             for (i in inputArgument[0]) {

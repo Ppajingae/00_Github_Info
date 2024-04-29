@@ -1,8 +1,9 @@
-package org.example
+package org.example.homework
 
-import org.example.validation.NumberValidator
-import org.example.validation.OperatorValidator
-import validation.Validator
+import org.example.homework.calculator.*
+import org.example.homework.validation.NumberValidator
+import org.example.homework.validation.OperatorValidator
+import org.example.homework.validation.Validator
 import java.io.BufferedReader
 import java.io.InputStreamReader
 
@@ -60,25 +61,24 @@ fun inputNumberOperatorValidator(bufferedReader: BufferedReader, isFirstCalculat
     return calculationNumberOperationList
 }
 
-
 fun input(information:String):BufferedReader {
     println(information)
     return BufferedReader(InputStreamReader(System.`in`))
 }
 
-fun calculationFunction(isFirst: Boolean, num1:Int, operator:String, num2:Int, tempNumber:Int):Int {
-    var calculator = Calculator()
+fun calculationFunction(isFirst: Boolean, firstNumber:Int, operator:String, secondNumber:Int, tempNumber:Int):Int {
+    val calculator = Calculator()
     var tempNum = tempNumber
     if(!isFirst){
        operatorIdentify(operator).let{
-            tempNum += calculator.calculate( it , num1 , num2)
+            tempNum += calculator.calculate( it , firstNumber , secondNumber)
             println(tempNum)
         }
 
         return tempNum
     }else {
         operatorIdentify(operator).let {
-            tempNum = calculator.calculate( it , num1 , num2)
+            tempNum = calculator.calculate( it , firstNumber , secondNumber)
             println(tempNum)
         }
         return tempNum
@@ -86,8 +86,7 @@ fun calculationFunction(isFirst: Boolean, num1:Int, operator:String, num2:Int, t
 
 }
 
-
-fun operatorIdentify(operator: String):CalculatorInterface{
+fun operatorIdentify(operator: String): CalculatorInterface {
         return when (operator) {
             "+" -> AddOperation()
 

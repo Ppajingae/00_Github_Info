@@ -1,6 +1,6 @@
-package org.example.validation
+package org.example.homework.validation
 
-class NumberValidator:ValidationInterface {
+class NumberValidator: ValidationInterface {
     override fun validate(inputArgument: List<String>, count: Boolean): Boolean {
         try{
             if(count){
